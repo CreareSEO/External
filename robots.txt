@@ -1,10 +1,6 @@
  User-agent: *
-    Disallow: /*?sort
-    Disallow: /*&sort
-    Disallow: /*?limit
-    Disallow: /*&limit
-    Disallow: /*?route=checkout
-    Disallow: /*?route=account
-    Disallow: /*?route=product/search
-    Disallow: /*&keyword
+    Disallow: /*?*
+    
     Allow: /
+    
+    Sitemap:http://www.domain.co.uk/sitemap.xml
