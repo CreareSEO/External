@@ -1,0 +1,13 @@
+<jdoc:include type="head" />
+ 
+<?php
+$currentMenuId = JSite::getMenu()->getActive()->id ;
+if($currentMenuId == '1') // 1 is the ID number of the menu pointing to the component
+{
+$this->setMetaData( 'description', 'As leading suppliers of quality carpets in Cambridge, we help homeowners from across Cambridge, Royston and the local region to find the perfect flooring for their properties' );
+}
+else
+{
+// do nothing
+}
+?>

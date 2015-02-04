@@ -1,0 +1,3 @@
+RewriteCond %{REQUEST_URI} !/administrator/*
+RewriteCond %{THE_REQUEST} ^.*/index.php
+RewriteRule ^(.*)index.php$ http://www.domain.com/$1 [R=301,L]
