@@ -1,0 +1,46 @@
+<%
+ 
+'This function allows us to call the URL to use in conditionals
+ 
+function curPageURL()
+ dim s, protocol, port
+ 
+ if Request.ServerVariables("HTTPS") = "on" then 
+   s = "s"
+ else 
+   s = ""
+ end if  
+ 
+ protocol = strleft(LCase(Request.ServerVariables("SERVER_PROTOCOL")), "/") & s 
+ 
+ if Request.ServerVariables("SERVER_PORT") = "80" then
+   port = ""
+ else
+   port = ":" & Request.ServerVariables("SERVER_PORT")
+ end if  
+ 
+ curPageURL = protocol & "://" & Request.ServerVariables("SERVER_NAME") &_ 
+              port & Request.ServerVariables("SCRIPT_NAME")
+end function
+ 
+function strLeft(str1,str2)
+ strLeft = Left(str1,InStr(str1,str2)-1)
+end function
+ 
+'Then we can use the following to print url:
+ 
+<%
+  response.write(curPageURL())
+%>
+ 
+'Or use the below to define conditional with curPageURL:
+ 
+if curPageURL = "http://www.domain.co.uk/" then
+ 
+variable = "value"
+ 
+else
+ 
+otherVariable = "otherValue"
+ 
+end if

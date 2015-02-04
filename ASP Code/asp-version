@@ -1,0 +1,5 @@
+<%
+Response.Write("Version: " + System.Environment.Version.ToString() )
+%>
+
+without <% %> for use in code-behind 
