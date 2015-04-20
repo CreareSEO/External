@@ -1,4 +1,0 @@
-Metatag			-            https://drupal.org/project/metatag
-XML Sitemap		-            https://drupal.org/project/xmlsitemap
-Global Redirect	-            https://drupal.org/project/globalredirect
-SEO Checklist		-            https://drupal.org/project/seo_checklist (Only if we have full access)
