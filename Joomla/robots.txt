@@ -1,3 +1,6 @@
+## Joomla Robots - Needs to be tested for Render blocking directories ##
+
+
 User-agent: *
 
 Sitemap:http://www.domain.co.uk/sitemap.xml
