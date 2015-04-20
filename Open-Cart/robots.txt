@@ -1,6 +1,11 @@
+ #### Open Cart Robots Boilerplate ###
+ 
+ 
  User-agent: *
-    Disallow: /*?*
+
     
     Allow: /
+    
+    Disallow: /*?*
     
     Sitemap:http://www.domain.co.uk/sitemap.xml
